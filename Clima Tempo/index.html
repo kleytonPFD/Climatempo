@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Clima Tempo 🌤</title>
+    <link rel="stylesheet" href="./SRC/style.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <form id="pesquisa" action="">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" name="citty_name" id="buscar-cidade" placeholder="Buscar Cidade">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <div id="clima" class="">
+            <h1 id="titulo">
+
+            </h1>
+            <div id="infos">
+                <div id="temp">
+                    <img id="temp-img" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                    <div>
+                        <p id="temp-valor">
+                            32 <sup>Cº</sup>
+                        </p>
+                        <p id="temp-descricao">
+                            Nublado
+                        </p>
+                    </div>
+                </div>
+                <div id="outras-infos">
+
+                    <div class="info">
+                        <i id="max-temp-ico" class="fa-solid fa-temperature-high"></i>
+                        <div>
+                            <h2>Temp Max</h2>
+                            <p id="temp-max">32 </p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i id="min-temp-ico" class="fa-solid fa-temperature-low"></i>
+                        <div>
+                            <h2>Temp Min</h2>
+                            <p id="temp-min"><sup></sup></p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i id="humidade-ico" class="fa-solid fa-droplet"></i>
+                        <div>
+                            <h2>Humidade</h2>
+                            <p id="humidade"></p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <i id="wind-ico" class="fa-solid fa-wind"></i>
+                        <div>
+                            <h2>Vento</h2>
+                            <p id="vento"><sup> <sup></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="alerta"></div>
+
+    </div>
+    <!-- o script precisa ser iniciado no final do corpo do html <body><scrypt></scrypt></body> -->
+    <script src="./SRC/script.js"></script>
+</body>
+
+</html>
